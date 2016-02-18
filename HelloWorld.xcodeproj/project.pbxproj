@@ -54,11 +54,11 @@
 		53F2264A1C7655DD00B92712 /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
-				53F226521C7655DD00B92712 /* Assets.xcassets */,
 				53F2265F1C765A6A00B92712 /* Common */,
-				53F226571C7655DD00B92712 /* Info.plist */,
 				53F2265E1C765A6500B92712 /* Storyboards */,
 				53F2265D1C765A5E00B92712 /* ViewController */,
+				53F226521C7655DD00B92712 /* Assets.xcassets */,
+				53F226571C7655DD00B92712 /* Info.plist */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -68,16 +68,16 @@
 			children = (
 				53F2264D1C7655DD00B92712 /* HomeViewController.swift */,
 			);
-			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		53F2265E1C765A6500B92712 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				53F2264F1C7655DD00B92712 /* Main.storyboard */,
 				53F226541C7655DD00B92712 /* LaunchScreen.storyboard */,
+				53F2264F1C7655DD00B92712 /* Main.storyboard */,
 			);
-			name = Storyboards;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		53F2265F1C765A6A00B92712 /* Common */ = {
@@ -85,7 +85,7 @@
 			children = (
 				53F2264B1C7655DD00B92712 /* AppDelegate.swift */,
 			);
-			name = Common;
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +174,7 @@
 				53F226501C7655DD00B92712 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		53F226541C7655DD00B92712 /* LaunchScreen.storyboard */ = {
@@ -182,6 +183,7 @@
 				53F226551C7655DD00B92712 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -313,6 +315,7 @@
 				53F2265C1C7655DD00B92712 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
