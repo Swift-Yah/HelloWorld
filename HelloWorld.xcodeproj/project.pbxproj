@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		53F2264C1C7655DD00B92712 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F2264B1C7655DD00B92712 /* AppDelegate.swift */; };
-		53F2264E1C7655DD00B92712 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F2264D1C7655DD00B92712 /* ViewController.swift */; };
+		53F2264E1C7655DD00B92712 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F2264D1C7655DD00B92712 /* HomeViewController.swift */; };
 		53F226511C7655DD00B92712 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F2264F1C7655DD00B92712 /* Main.storyboard */; };
 		53F226531C7655DD00B92712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53F226521C7655DD00B92712 /* Assets.xcassets */; };
 		53F226561C7655DD00B92712 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F226541C7655DD00B92712 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		53F226481C7655DD00B92712 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F2264B1C7655DD00B92712 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		53F2264D1C7655DD00B92712 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		53F2264D1C7655DD00B92712 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		53F226501C7655DD00B92712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53F226521C7655DD00B92712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53F226551C7655DD00B92712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +54,38 @@
 		53F2264A1C7655DD00B92712 /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
-				53F2264B1C7655DD00B92712 /* AppDelegate.swift */,
-				53F2264D1C7655DD00B92712 /* ViewController.swift */,
-				53F2264F1C7655DD00B92712 /* Main.storyboard */,
 				53F226521C7655DD00B92712 /* Assets.xcassets */,
-				53F226541C7655DD00B92712 /* LaunchScreen.storyboard */,
+				53F2265F1C765A6A00B92712 /* Common */,
 				53F226571C7655DD00B92712 /* Info.plist */,
+				53F2265E1C765A6500B92712 /* Storyboards */,
+				53F2265D1C765A5E00B92712 /* ViewController */,
 			);
 			path = HelloWorld;
+			sourceTree = "<group>";
+		};
+		53F2265D1C765A5E00B92712 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				53F2264D1C7655DD00B92712 /* HomeViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		53F2265E1C765A6500B92712 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				53F2264F1C7655DD00B92712 /* Main.storyboard */,
+				53F226541C7655DD00B92712 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		53F2265F1C765A6A00B92712 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				53F2264B1C7655DD00B92712 /* AppDelegate.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +120,7 @@
 				TargetAttributes = {
 					53F226471C7655DD00B92712 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = LQ5WW9469F;
 					};
 				};
 			};
@@ -135,7 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53F2264E1C7655DD00B92712 /* ViewController.swift in Sources */,
+				53F2264E1C7655DD00B92712 /* HomeViewController.swift in Sources */,
 				53F2264C1C7655DD00B92712 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.dataempire.HelloWorld;
@@ -260,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = info.dataempire.HelloWorld;
