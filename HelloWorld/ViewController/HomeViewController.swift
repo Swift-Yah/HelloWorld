@@ -10,5 +10,10 @@ import UIKit
 
 /** A view controller to home view at storyboard: `Main`. */
 class HomeViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        print("The view did load")
+    }
     
 }

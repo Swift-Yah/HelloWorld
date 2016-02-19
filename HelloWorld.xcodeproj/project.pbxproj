@@ -56,18 +56,19 @@
 			children = (
 				53F2265F1C765A6A00B92712 /* Common */,
 				53F2265E1C765A6500B92712 /* Storyboards */,
-				53F2265D1C765A5E00B92712 /* ViewController */,
+				53F2265D1C765A5E00B92712 /* ViewControllers */,
 				53F226521C7655DD00B92712 /* Assets.xcassets */,
 				53F226571C7655DD00B92712 /* Info.plist */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
 		};
-		53F2265D1C765A5E00B92712 /* ViewController */ = {
+		53F2265D1C765A5E00B92712 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				53F2264D1C7655DD00B92712 /* HomeViewController.swift */,
 			);
+			name = ViewControllers;
 			path = ViewController;
 			sourceTree = "<group>";
 		};
