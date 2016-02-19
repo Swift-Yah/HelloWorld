@@ -23,12 +23,14 @@ class HomeViewController: UIViewController {
     @IBAction func sendAgeAction() {
         guard ageTextField.text?.characters.count > 0 else {
             resultLabel.text = "Your age must be typed"
+            resultLabel.textColor = UIColor.redColor()
             
             return
         }
         
         if let age = ageTextField.text {
             resultLabel.text = "Your age is \(age) years old"
+            resultLabel.textColor = UIColor.lightGrayColor()
         }
     }
     
